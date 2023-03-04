@@ -14,11 +14,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    
 }
 
 .porta{
     height: 350px;
-    padding: 20px;    
+    padding: 20px; 
+    cursor: pointer;  
 }
 
 .sombra{
