@@ -1,5 +1,9 @@
 const olhos = [...document.getElementsByClassName("olho")];
 
+// let som = new Audio("psicose.mp3");
+// som.play();
+
+
 let posX_mouse = 0;  
 let posY_mouse = 0;
 
@@ -19,19 +23,20 @@ window.addEventListener("mousemove", (evento) => {
 
 const p1 = document.getElementById("p1").addEventListener("click", () => {
     alert("Porta 1");
+    som.pause();
 });
 
 
 const p2 = document.getElementById("p2").addEventListener("click", () => {
     alert("Porta 2");
+    som.pause();
 });
 
 
 const p3 = document.getElementById("p3").addEventListener("click", () => {
     alert("Porta 3");
+    som.pause();
 });
-
-
 
 
 
