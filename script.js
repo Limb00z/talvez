@@ -3,7 +3,6 @@ const olhos = [...document.getElementsByClassName("olho")];
 let principal = document.getElementById("principal");
 
 
-
 window.addEventListener("mousemove", (evento) => {
     
     let posX_mouse = evento.clientX;
@@ -45,15 +44,28 @@ document.getElementById("p1").addEventListener("click", () => {
 
 
 document.getElementById("p2").addEventListener("click", () => {
-  Swal.fire({
-    title: '<strong>HTML <u>example</u></strong>',
-    icon: 'info',
-    html:
-      'You can use <b>bold text</b>, ' +
-      '<a href="//sweetalert2.github.io">links</a> ' +
-      'and other HTML tags',
-    showCloseButton: true
-  });
+  
+  principal.innerHTML = "";
+  principal.innerHTML = '<image src="https://media.tenor.com/YPSDQJrw3TMAAAAC/monster-inc-boos-door.gif" width="100%" height="100%" style="position:absolute" frameBorder="0" allowFullScreen></image>';
+
+  setTimeout(() => {
+    location.reload();
+  }, 6000);
+  
+  
+  
+  
+  // Swal.fire({
+  //   title: '<strong>HTML <u>example</u></strong>',
+  //   icon: 'info',
+  //   html:
+  //     'You can use <b>bold text</b>, ' +
+  //     '<a href="//sweetalert2.github.io">links</a> ' +
+  //     'and other HTML tags',
+  //   showCloseButton: true
+  // });
+  
+
 
   // setTimeout(() => {
   //   window.location.href = "https://limb00z.github.io/Potifolio_novo/"
