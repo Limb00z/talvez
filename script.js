@@ -1,7 +1,8 @@
 const olhos = [...document.getElementsByClassName("olho")];
 
-var som = new Audio("psicose.mp3");
-som.play();
+let principal = document.getElementById("principal");
+
+
 
 window.addEventListener("mousemove", (evento) => {
     
@@ -18,9 +19,11 @@ window.addEventListener("mousemove", (evento) => {
 
 
 
+
 const p1 = document.getElementById("p1").addEventListener("click", () => {
-  
-Swal.fire({
+  var som = new Audio("psicose.mp3");
+  som.play();
+  Swal.fire({
     title: 'Você caiu num bug x.x',
     width: 600,
     padding: '3em',
@@ -31,14 +34,14 @@ Swal.fire({
         `
 });
      
-  let principal = document.getElementById("principal");
   principal.innerHTML = "";
   principal.innerHTML = '<image src="https://i.giphy.com/media/H6W9H29kVsUI2hJE90/giphy.webp" width="100%" height="100%" style="position:absolute" frameBorder="0" allowFullScreen></image>';
 
+  setTimeout(() => {
+    location.reload()
+  }, 20000);
+  
 
-  
-  
-    // som.pause();
 });
 
 
