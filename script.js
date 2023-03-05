@@ -18,11 +18,10 @@ window.addEventListener("mousemove", (evento) => {
 });
 
 
-
-
-const p1 = document.getElementById("p1").addEventListener("click", () => {
-  var som = new Audio("psicose.mp3");
+document.getElementById("p1").addEventListener("click", () => {
+  let som = new Audio("psicose.mp3");
   som.play();
+
   Swal.fire({
     title: 'Você caiu num bug x.x',
     width: 600,
@@ -45,7 +44,7 @@ const p1 = document.getElementById("p1").addEventListener("click", () => {
 });
 
 
-const p2 = document.getElementById("p2").addEventListener("click", () => {
+document.getElementById("p2").addEventListener("click", () => {
   Swal.fire({
     title: '<strong>HTML <u>example</u></strong>',
     icon: 'info',
@@ -56,17 +55,16 @@ const p2 = document.getElementById("p2").addEventListener("click", () => {
     showCloseButton: true
   });
 
-  setTimeout(() => {
-    window.location.href = "https://limb00z.github.io/Potifolio_novo/"
-  }, 5000);
+  // setTimeout(() => {
+  //   window.location.href = "https://limb00z.github.io/Potifolio_novo/"
+  // }, 5000);
 
-    // som.pause();
 });
 
 
-const p3 = document.getElementById("p3").addEventListener("click", () => {
-    alert("p3");
-    // som.pause();
+document.getElementById("p3").addEventListener("click", () => {
+  alert("p3");
+  
 });
 
 
